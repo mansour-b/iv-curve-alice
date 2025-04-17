@@ -1,9 +1,13 @@
 import numpy as np
-from drivers import Ammeter, DCVoltageGenerator, Voltmeter
+from electronic_circuits.circuits import MeasuringCircuit
+from electronic_circuits.components import Resistor
 
-generator = DCVoltageGenerator()
-voltmeter = Voltmeter()
-ammeter = Ammeter()
+component = Resistor()
+circuit = MeasuringCircuit(component)
+
+generator = circuit.generator
+voltmeter = circuit.voltmeter
+ammeter = circuit.ammeter
 
 for voltage in np.arange(-5, 6):
     generator.set_voltage(voltage)
