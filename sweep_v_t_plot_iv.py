@@ -66,12 +66,3 @@ plt.ylim(plot_y_limits)
 
 # Tell python to show the figure
 plt.show()
-# Tell python to show the figure
-plt.show()
-# Tell python to show the figure
-plt.show()
-# Tell python to show the figure
-plt.show()
-plt.show()
-plt.show()
-plt.show()
