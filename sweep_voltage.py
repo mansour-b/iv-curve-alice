@@ -5,7 +5,7 @@ generator = DCVoltageGenerator()
 voltmeter = Voltmeter()
 ammeter = Ammeter()
 
-for voltage in np.arange(-5, 5):
+for voltage in np.arange(-5, 6):
     generator.set_voltage(voltage)
 
     measured_voltage = voltmeter.measure()
